@@ -18,4 +18,5 @@ Este projeto é um sistema simples de autenticação de usuários, desenvolvido 
 - HTML5 e CSS3 (sem Bootstrap)
 
 ## Objetivo
-O objetivo deste projeto é demonstrar de forma simples e didática como implementar um sistema de autenticação web, com armazenamento seguro dos dados dos usuários, utilizando boas práticas de segurança e um visual moderno. 
+O objetivo deste projeto é demonstrar de forma simples e didática como implementar um sistema de autenticação web, com armazenamento seguro dos dados dos usuários, utilizando boas práticas de segurança e um visual moderno.  
+
