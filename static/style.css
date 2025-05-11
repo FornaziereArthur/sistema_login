@@ -1,0 +1,276 @@
+/* Importação da fonte futurista */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff9966 0%, #ff5e62 30%, #8f5eff 70%, #2b86c5 100%);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(30, 30, 60, 0.85);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.15);
+    flex-shrink: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.navbar-brand {
+    margin-right: auto;
+    color: #fff;
+    text-shadow: 0 2px 8px #ff9966, 0 1px 2px #2b86c5;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin-left: auto;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);
+    color: #fff;
+    box-shadow: 0 2px 8px #ff9966;
+    text-decoration: none;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 70px); /* 70px é a altura aproximada da navbar */
+}
+
+/* Cards */
+.card {
+    background: transparent;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px 0 rgba(44, 62, 80, 0.18);
+    padding: 2.5rem 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.card-title {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-shadow: 0 2px 8px #ff9966, 0 1px 2px #2b86c5;
+}
+
+/* Formulários */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ff9966;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1.5px solid #ff9966;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #8f5eff;
+    box-shadow: 0 0 0 2px #8f5eff44;
+    background: rgba(255,255,255,0.15);
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background 0.3s, transform 0.1s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #8f5eff 0%, #2b86c5 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px #8f5eff55;
+}
+
+.btn-success {
+    background: linear-gradient(90deg, #2b86c5 0%, #8f5eff 100%);
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px #ff996655;
+}
+
+.btn-danger {
+    background: linear-gradient(90deg, #ff5e62 0%, #ff9966 100%);
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(90deg, #2b86c5 0%, #8f5eff 100%);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px #2b86c555;
+}
+
+/* Alertas */
+.alert {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    position: relative;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border: 1.5px solid #ff9966;
+    box-shadow: 0 2px 8px #ff996633;
+}
+
+.alert-info {
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    border: 1.5px solid #8f5eff;
+}
+
+.alert-close {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* Links */
+a {
+    color: #ff9966;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #8f5eff;
+    text-decoration: none;
+}
+
+/* Utilitários */
+.text-center {
+    text-align: center;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        padding: 0 1rem;
+        min-height: calc(100vh - 120px);
+    }
+    .card {
+        padding: 1.2rem 0.5rem;
+    }
+    .card-title {
+        font-size: 1.3rem;
+    }
+} 
